@@ -1,10 +1,6 @@
 # 🌿 Plant Disease Detection System Using Deep Learning
 
-An AI-powered web application that identifies plant leaf diseases from images using **Convolutional Neural Networks (CNNs)** and deep learning. The system aims to help users recognize potential plant diseases through image-based prediction.
-
-[![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://www.python.org/)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep%20Learning-orange?logo=tensorflow)](https://www.tensorflow.org/)
-[![Keras](https://img.shields.io/badge/Keras-Neural%20Networks-red?logo=keras)](https://keras.io/)
+An AI-powered web application that identifies plant leaf diseases from images using **Convolutional Neural Networks (CNNs)** and deep learning. 
 
 ## 📌 Overview
 
