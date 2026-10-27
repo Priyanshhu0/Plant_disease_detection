@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepLeaf Diagnostics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🌿</span>
+                <span class="nav-title">Plant Leaf Diagnostics</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1 class="hero-title">Plant Leaf Diagnostics</h1>
+        <p class="hero-subtitle">Upload a photo of a tomato leaf and let AI check its health.</p>
+    </section>
+
+    <section class="upload-section">
+        <div class="card upload-card">
+            <div class="upload-box" id="uploadBox">
+                <input type="file" id="fileInput" accept="image/*" hidden>
+                <div id="uploadPrompt">
+                    <p class="upload-icon">📷</p>
+                    <p>Click to select a leaf image</p>
+                    <p class="upload-hint">JPG or PNG, one leaf per photo</p>
+                </div>
+                <img id="previewImage" class="preview-image" style="display:none;">
+            </div>
+
+            <button class="btn btn-primary" id="predictBtn" disabled>Analyze Leaf</button>
+
+            <p class="status-line" id="serverStatus">Checking server...</p>
+        </div>
+
+        <div class="card result-card" id="resultCard" style="display:none;">
+            <h2 class="card-heading">Result</h2>
+
+            <div class="result-main">
+                <span class="result-label">Diagnosis</span>
+                <h3 class="result-value" id="resultLabel">--</h3>
+            </div>
+
+            <div class="result-details">
+                <div class="detail-item">
+                    <span class="detail-label">Confidence</span>
+                    <div class="confidence-bar-bg">
+                        <div class="confidence-bar-fill" id="confidenceBar"></div>
+                    </div>
+                    <span class="detail-value" id="confidenceValue">0%</span>
+                </div>
+            </div>
+
+            <p class="result-note" id="resultNote"></p>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <h2 class="section-heading">About This Project</h2>
+        <p class="about-text">
+            This app uses a Convolutional Neural Network (CNN) trained on tomato leaf
+            images to detect common plant diseases. You upload one photo, the image is
+            resized and normalized, and the trained model predicts whether the leaf is
+            healthy or affected by a disease, along with a confidence score.
+        </p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 DeepLeaf Diagnostics</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
