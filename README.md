@@ -2,10 +2,6 @@
 
 An AI-powered web application that identifies plant leaf diseases from images using **Convolutional Neural Networks (CNNs)** and deep learning. 
 
-## 📌 Overview
-
-The **Plant Disease Detection System** uses deep learning to analyze images of plant leaves and predict the corresponding disease category learned during model training.
-
 ## 🧠 How It Works
 
 1. **Image Upload:** The user selects an image of a plant leaf.
